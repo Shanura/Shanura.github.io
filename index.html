@@ -1,303 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilekuttige Priyan Shanura Fernando</title>
-    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            /* Updated background property */
-            background: url('https://images.unsplash.com/photo-1483729558449-cc0e08102947?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
-            background-size: cover;
-            min-height: 100vh;
-            transition: background-color 0.5s ease;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilekuttige Priyan Shanura Fernando</title>
+  <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --brand: #0077b5;
+      --brand-dark: #003e66;
+      --ink: #2a2a2a;
+      --muted: #5a5a5a;
+      --surface: rgba(255, 255, 255, 0.94);
+      --radius: 14px;
+    }
 
-        .container {
-            max-width: 960px;
-            margin: 20px auto;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      color: var(--ink);
+      background: url(https://imgur.com/RnBKJPf) top center/cover no-repeat fixed;
+      line-height: 1.6;
+    }
 
-        .container:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
+    .container {
+      max-width: 980px;
+      margin: 32px auto;
+      background: var(--surface);
+      padding: 28px;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+    }
 
-        header {
-            text-align: center;
-            padding: 40px 0;
-        }
+    header { text-align: center; padding: 14px 0 6px; }
 
-        header h1 {
-            color: #0077b5;
-            margin-bottom: 10px;
-            font-size: 2.5em;
-            transition: color 0.3s ease;
-        }
+    header h1 {
+      color: var(--brand);
+      margin: 0 0 6px;
+      font-size: clamp(28px, 4vw, 40px);
+      letter-spacing: 0.3px;
+    }
 
-        header h1:hover {
-            color: #005073;
-        }
+    .subtitle { color: var(--muted); font-size: 14px; }
 
-        header p {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 20px;
-        }
+    section { margin: 28px 0; }
 
-        section {
-            margin-bottom: 40px;
-        }
+    section h2 {
+      color: var(--brand);
+      font-size: clamp(20px, 3vw, 26px);
+      margin: 0 0 14px;
+      border-bottom: 2px solid var(--brand);
+      padding-bottom: 8px;
+    }
 
-        section h2 {
-            color: #0077b5;
-            margin-bottom: 20px;
-            font-size: 2em;
-            border-bottom: 2px solid #0077b5;
-            padding-bottom: 10px;
-            transition: color 0.3s ease, border-bottom-color 0.3s ease;
-        }
+    a { color: var(--brand); text-decoration: none; font-weight: 700; }
+    a:hover { color: var(--brand-dark); text-decoration: underline; }
 
-        section h2:hover {
-            color: #003366;
-            border-bottom-color: #003366;
-        }
+    .skills-list { display: flex; flex-wrap: wrap; gap: 10px; padding-left: 0; list-style: none; }
+    .skills-list li { background: var(--brand); color: #fff; padding: 8px 14px; border-radius: 999px; font-size: 14px; }
 
-        section p {
-            font-size: 1.1em;
-            margin-bottom: 15px;
-        }
+    .card { background: #fbfbfb; border: 1px solid rgba(0,0,0,0.06); border-radius: var(--radius); padding: 18px; margin-bottom: 14px; }
 
-        section ul {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 15px;
-        }
-
-        section ul li {
-            margin-bottom: 10px;
-        }
-
-        section a {
-            color: #0077b5;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease, text-decoration 0.3s ease;
-        }
-
-        section a:hover {
-            color: #003366;
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-            border-top: 4px solid #0077b5;
-            transition: background-color 0.3s ease;
-        }
-
-        footer:hover {
-            background-color: #222;
-        }
-
-        .contact-info {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .contact-info a {
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-
-        .contact-info a:hover {
-            color: #003366;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .skills-list li {
-            background-color: #0077b5;
-            color: #fff;
-            padding: 8px 15px;
-            margin: 5px;
-            border-radius: 20px;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .skills-list li:hover {
-            background-color: #003366;
-            transform: scale(1.1);
-        }
-
-        .publication-item {
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .publication-item:hover {
-            background-color: #eee;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .publication-item h3 {
-            color: #0077b5;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-            transition: color 0.3s ease;
-        }
-
-        .publication-item h3:hover {
-            color: #003366;
-        }
-
-    </style>
+    footer { text-align: center; color: #fff; background: #2f2f2f; padding: 18px; margin-top: 26px; border-top: 4px solid var(--brand); border-radius: 0 0 var(--radius) var(--radius); }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 id="main-heading">ILEKUTTIGE PRIYAN SHANURA FERNANDO , Ph.D.</h1>
-        </header>
+  <div class="container">
+    <header>
+      <h1>Ilekuttige Priyan Shanura Fernando, Ph.D.</h1>
+      <div class="subtitle">Edmonton, AB · <a href="mailto:shanurabru@gmail.com">shanurabru@gmail.com</a> · +1 (825) 333‑5511</div>
+    </header>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Resourceful research scientist with 6+ years of postdoctoral experience in functional food and natural product R&D, with expertise in natural product chemistry and preclinical bioactivity screening for potential pharmaceutical, nutraceutical, and functional food applications. Proven skills in chromatographic purification, structural elucidation, and in vitro/in vivo model systems (cell lines, zebrafish, murine). Strong communicator with a track record of interdisciplinary collaboration, scientific publication, and product development.
-            </p>
-        </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Analytical and research‑driven scientist with 10+ years of multidisciplinary R&D experience spanning analytical chemistry, natural products chemistry, bioactivity evaluation, and process‑oriented laboratory operations. Hands‑on expertise in chromatography (HPLC, LC–MS/MS, GC–MS/MS) and spectroscopy (FTIR, UV–Vis, NMR) for method development, validation, and troubleshooting. Adept at cross‑functional collaboration, data integrity, SOP documentation, and laboratory safety.</p>
+    </section>
 
-        <section id="core-competencies">
-            <h2>Core Competencies</h2>
-            <ul class="skills-list">
-                <li>Natural Product Chemistry</li>
-                <li>Applied Organic Chemistry</li>
-                <li>Bioactive Peptides</li>
-                 <li>Protein Chemistry</li>
-                <li>Extraction and Purification</li>
-                <li>Chromatography</li>
-                <li>Analytical Techniques: HPLC, LC-MS, GC-MS/MS, UV-Vis, FTIR, NMR</li>
-                <li>Bioactivity Screening: Western blot, qPCR, Immunofluorescence, Flowcytometry</li>
-                <li>Cell Culture (multiple lines), Zebrafish & Rodent Models</li>
-                <li>Molecular Docking & Computational Chemistry: AutoDock Vina, Discovery Studio, Gaussian</li>
-                <li>Project Management</li>
-                <li>Teaching & Mentoring</li>
-                 <li>Languages: Fluent in English and Sinhalese | Basic Korean</li>
-            </ul>
-        </section>
+    <section id="core-competencies">
+      <h2>Core Competencies</h2>
+      <ul class="skills-list">
+        <li>Analytical Chemistry</li>
+        <li>Natural Products Chemistry</li>
+        <li>Medicinal Chemistry</li>
+        <li>Method Development & Validation</li>
+        <li>HPLC · LC–MS/MS · GC–MS/MS</li>
+        <li>FTIR · UV–Vis · NMR</li>
+        <li>Bioactivity Evaluation</li>
+        <li>Functional Assays</li>
+        <li>Process Development</li>
+        <li>Process Safety Awareness</li>
+      </ul>
+    </section>
 
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <div class="publication-item">
-                <h3><a href="https://apps.ualberta.ca/directory/person/ilekutti" target="_blank">Postdoctoral Fellow</a></h3>
-                <p>University of Alberta, Edmonton, AB | 2022 – Present</p>
-                <p>Investigating antihypertensive peptides and functional food applications. Led development of enzymatic hydrolysates with therapeutic potential. Supervised graduate students and contributed to multiple peer-reviewed publications.</p>
-            </div>
-            <div class="publication-item">
-                <h3>Assistant Lecturer (Part-Time)</h3>
-                <p>University of Alberta – AFNS 532: Food Protein Chemistry | 2024</p>
-            </div>
-            <div class="publication-item">
-                <h3>Research Professor / Postdoctoral Fellow</h3>
-                <p>Chonnam National University, Korea | 2019 – 2022</p>
-                 <p>Isolated and characterized marine-derived bioactive compounds. Led projects on skin-protective, antioxidant, and anti-inflammatory agents. Held 2 grants as PI. Managed zebrafish and murine model systems for in vivo testing.</p>
-            </div>
-            <div class="publication-item">
-                <h3>Postdoctoral Fellow</h3>
-                <p>Jeju National University, Korea | 2017 – 2018</p>
-                <p>Focused on marine biomedical sciences: soft coral terpenoids, fucoidans, krill peptides.</p>
-            </div>
-            <div class="publication-item">
-                <h3>Research Consultant</h3>
-                <p>University of Colombo & Universitas Brawijaya | 2018 – 2019</p>
-                <p>Helped establish zebrafish labs, trained students in bioassay and compound isolation.</p>
-            </div>
-        </section>
+    <section id="selected-achievements">
+      <h2>Patents</h2>
+      <p>Patents 3: <a href="https://patents.google.com/patent/KR20230151347A/en?oq=KR20230151347A" target="_blank">KR20230151347A</a>, <a href="https://patents.google.com/patent/KR20190123019A/en?oq=KR20190123019A" target="_blank">KR20190123019A</a>, <a href="https://patents.google.com/patent/KR20220087917A/en?oq=KR20220087917A" target="_blank">KR20220087917A</a></p>
+    </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div class="publication-item">
-                <h3><a href="https://badges.wes.org/Evidence?i=5df46187-26c1-43a7-9cbc-8d764b717667&type=ca" target="_blank">Ph.D. in Marine Life Sciences</a></h3>
-                <p>Jeju National University, South Korea | 2017</p>
-                <p>GPA: 4.26/4.3 (~3.97/4.0) | Thesis: <a href="https://oak.jejunu.ac.kr/handle/2020.oak/22326" target="_blank">Bioactive Natural Products from Marine Algae and Soft Corals</a></p>
-            </div>
-            <div class="publication-item">
-                <h3>M.Sc. in Applied Organic Chemistry</h3>
-                <p>University of Colombo, Sri Lanka | 2014</p>
-                <p>Thesis: Isolation of Biologically Active Compounds from Algae</p>
-            </div>
-            <div class="publication-item">
-                <h3>B.Sc. in Biological Sciences</h3>
-                <p>University of Colombo, Sri Lanka | 2011</p>
-                <p>Majors: Chemistry, Biochemistry, Zoology | Minors: Radiobiology</p>
-            </div>
-        </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>3‑21 Agriculture/Forestry Centre, University of Alberta, 9011 ‑ 116 St NW, Edmonton AB T6G 2P5<br>
+      Email: <a href="mailto:shanurabru@gmail.com">shanurabru@gmail.com</a></p>
+    </section>
 
-        <section id="selected-achievements">
-            <h2>Selected Achievements</h2>
-            <ul>
-                <li><a href="https://doi.org/10.8080/1020200178425" target="_blank">Patent Holder: Salt Solution Containing Natural Extract To Improve Fish Texture And Method For Producing Salted Fish Using The Same (생선의 식감을 개선하는 천연 추출물 함유 염지액 및 이를 이용한 염장 생선 제조방법)</a> (KR Reg. No: 10-2658577)</li>
-                <li>Rising Researcher Award – Korean Society of Fisheries & Aquatic Science, 2020</li>
-                <li>Young Scientist Award – ISNFF 2017</li>
-                <li>Guest Editor, Marine Drugs journal – Special Issue on Marine Anti-Inflammatory Agents</li>
-                <li>Award for the best contributor; 2017-2019, ALGAE journal Issued by The Korean Society of Phycology · Jan 2020 for research article DOI: 10.1007/s10068-018-0406-1 (For the highest citation count)</li>
-                <li>BK21 PLUS grant student scholarship award Issued by National Research Foundation of Republic of Korea · Feb 2018</li>
-            </ul>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>70+ peer-reviewed papers | h-index: 37 | i10-index: 71 | Citations: 4000+</p>
-            <p>Full list: <a href="https://scholar.google.com/citations?user=__WZgt4AAAAJ&hl=en" target="_blank">Google Scholar Profile</a></p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Details</h2>
-            <p>I. P. Shanura Fernando (Ph.D.)<br>
-                3-18D Agriculture/Forestry Centre<br>
-                University of Alberta<br>
-                9011 - 116 St NW<br>
-                Edmonton AB T6G 2P5<br>
-                Email: <a href="mailto:shanurabru@gmail.com">shanurabru@gmail.com</a><br>
-                Email: <a href="mailto:ilekutti@ualberta.ca">ilekutti@ualberta.ca</a><br>
-                <a href="https://www.linkedin.com/in/shanura-fernando-b8872317a/" target="_blank">LinkedIn</a> |
-                <a href="https://scholar.google.com/citations?user=__WZgt4AAAAJ&hl=en" target="_blank">Google Scholar</a> |
-                <a href="https://orcid.org/0000-0002-9450-4239" target="_blank">ORCID ID</a> |
-                <a href="https://www.researchgate.net/profile/Shanura-Fernando" target="_blank">ResearchGate</a>
-            </p>
-        </section>
-
-    </div>
-
-    <script>
-        const mainHeading = document.getElementById('main-heading');
-        mainHeading.addEventListener('click', function() {
-            alert('Thank you for visiting my website!');
-        });
-    </script>
+    <footer>© <span id="year"></span> I. P. Shanura Fernando — All Rights Reserved</footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
