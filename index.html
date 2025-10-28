@@ -12,6 +12,7 @@
       --ink: #2a2a2a;
       --muted: #5a5a5a;
       --surface: rgba(255, 255, 255, 0.94);
+      --card: #fbfbfb;
       --radius: 14px;
     }
 
@@ -19,7 +20,7 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       color: var(--ink);
-      background: url(https://imgur.com/RnBKJPf) top center/cover no-repeat fixed;
+      background: url('https://imgur.com/RnBKJPf') top center/cover no-repeat fixed;
       line-height: 1.6;
     }
 
@@ -59,7 +60,13 @@
     .skills-list { display: flex; flex-wrap: wrap; gap: 10px; padding-left: 0; list-style: none; }
     .skills-list li { background: var(--brand); color: #fff; padding: 8px 14px; border-radius: 999px; font-size: 14px; }
 
-    .card { background: #fbfbfb; border: 1px solid rgba(0,0,0,0.06); border-radius: var(--radius); padding: 18px; margin-bottom: 14px; }
+    .card { background: var(--card); border: 1px solid rgba(0,0,0,0.06); border-radius: var(--radius); padding: 18px; margin-bottom: 14px; }
+
+    .role-title { margin: 0; font-size: 18px; color: var(--brand-dark); }
+    .role-meta { margin: 4px 0 10px; color: var(--muted); font-size: 14px; }
+
+    ul.clean { margin: 8px 0 0 18px; }
+    ul.clean li { margin: 6px 0; }
 
     footer { text-align: center; color: #fff; background: #2f2f2f; padding: 18px; margin-top: 26px; border-top: 4px solid var(--brand); border-radius: 0 0 var(--radius) var(--radius); }
   </style>
@@ -68,12 +75,12 @@
   <div class="container">
     <header>
       <h1>Ilekuttige Priyan Shanura Fernando, Ph.D.</h1>
-      <div class="subtitle">Edmonton, AB · <a href="mailto:shanurabru@gmail.com">shanurabru@gmail.com</a> · +1 (825) 333‑5511</div>
+      <div class="subtitle">Edmonton, AB · <a href="mailto:shanurabru@gmail.com">shanurabru@gmail.com</a> · +1 (825) 333-5511</div>
     </header>
 
     <section id="about">
       <h2>About Me</h2>
-      <p>Analytical and research‑driven scientist with 10+ years of multidisciplinary R&D experience spanning analytical chemistry, natural products chemistry, bioactivity evaluation, and process‑oriented laboratory operations. Hands‑on expertise in chromatography (HPLC, LC–MS/MS, GC–MS/MS) and spectroscopy (FTIR, UV–Vis, NMR) for method development, validation, and troubleshooting. Adept at cross‑functional collaboration, data integrity, SOP documentation, and laboratory safety.</p>
+      <p>Analytical and research-driven scientist with 10+ years of multidisciplinary R&amp;D experience spanning analytical chemistry, natural products chemistry, bioactivity evaluation, and process-oriented laboratory operations. Hands-on expertise in chromatography (HPLC, LC–MS/MS, GC–MS/MS) and spectroscopy (FTIR, UV–Vis, NMR) for method development, validation, and troubleshooting. Adept at cross-functional collaboration, data integrity, SOP documentation, and laboratory safety. Dedicated to supporting safe, efficient process development and scale-up in industrial environments.</p>
     </section>
 
     <section id="core-competencies">
@@ -81,26 +88,131 @@
       <ul class="skills-list">
         <li>Analytical Chemistry</li>
         <li>Natural Products Chemistry</li>
-        <li>Medicinal Chemistry</li>
-        <li>Method Development & Validation</li>
+        <li>Medicinal Chemistry (theory)</li>
+        <li>Method Development &amp; Validation</li>
         <li>HPLC · LC–MS/MS · GC–MS/MS</li>
         <li>FTIR · UV–Vis · NMR</li>
-        <li>Bioactivity Evaluation</li>
-        <li>Functional Assays</li>
+        <li>Protein/Peptide Characterization</li>
+        <li>Bioactivity Evaluation · Functional Assays</li>
         <li>Process Development</li>
         <li>Process Safety Awareness</li>
+        <li>ISO 17025 · cGMP Familiarity</li>
+        <li>Instrument Calibration &amp; Troubleshooting</li>
+        <li>Experimental Design &amp; Documentation</li>
+        <li>Teaching &amp; Mentoring</li>
+        <li>Languages: English · Sinhala · Basic Korean</li>
       </ul>
     </section>
 
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="card">
+        <h3 class="role-title"><a href="https://apps.ualberta.ca/directory/person/ilekutti" target="_blank" rel="noopener">Research Fellow</a></h3>
+        <div class="role-meta">University of Alberta, Edmonton, AB · Aug 2022 – Present</div>
+        <ul class="clean">
+          <li>Develop and validate analytical methods for protein/peptide purification and characterization in food and biological matrices.</li>
+          <li>Operate and maintain HPLC and spectrophotometric systems; perform routine calibration and troubleshooting to ensure data integrity.</li>
+          <li>Optimize laboratory workflows to improve reproducibility and analytical throughput; document procedures (SOPs) and QC checks.</li>
+          <li>Conduct chemical safety assessments and ensure adherence to institutional safety standards and biosafety requirements.</li>
+          <li>Mentor graduate/undergraduate researchers in experimental design, instrument operation, and statistical data analysis.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="role-title">Assistant Lecturer (Part‑time)</h3>
+        <div class="role-meta">University of Alberta – AFNS 532: Food Protein Chemistry · Sep 2024 – Dec 2024</div>
+        <ul class="clean">
+          <li>Delivered lectures and guided labs on protein structure, stability, processing, and sustainability.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="role-title">Senior Research Fellow</h3>
+        <div class="role-meta">Chonnam National University, South Korea · Jun 2020 – Jul 2022</div>
+        <ul class="clean">
+          <li>Led two research projects as PI; planned and executed multi‑step purification/derivatization of bioactive natural products with functional testing.</li>
+          <li>Applied chromatographic and spectroscopic techniques for quantitative/qualitative characterization; authored technical reports.</li>
+          <li>Oversaw lab operations, instrument maintenance schedules, and process improvement initiatives; enforced safety compliance.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="role-title">Research Fellow</h3>
+        <div class="role-meta">Chonnam National University, South Korea · Jul 2019 – May 2020</div>
+        <ul class="clean">
+          <li>Conducted chemical characterization and bioassays for nutraceutical/pharmaceutical applications.</li>
+          <li>Developed extraction and purification methods (LC) and performed LC/GC–MS/MS identification and quantification.</li>
+          <li>Translated analytical findings to support scale‑up extraction and purification studies.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="role-title">Research Consultant</h3>
+        <div class="role-meta">University of Colombo, Sri Lanka · Nov 2018 – Jun 2019</div>
+        <ul class="clean">
+          <li>Set up a zebrafish bioassay laboratory; designed analytical workflows and trained staff in method validation and sample integrity.</li>
+          <li>Established instrument use/calibration routines and export‑compliant documentation.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="role-title">Research Fellow</h3>
+        <div class="role-meta">Jeju National University, South Korea · Oct 2017 – Oct 2018</div>
+        <ul class="clean">
+          <li>Purified and spectroscopically characterized marine natural products; performed in vitro, in vivo, and in silico functional assays.</li>
+          <li>Supported setup, maintenance, and calibration of analytical and imaging instruments for bioactivity testing.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <h3 class="role-title"><a href="https://badges.wes.org/Evidence?i=5df46187-26c1-43a7-9cbc-8d764b717667&type=ca" target="_blank" rel="noopener">Ph.D. in Marine Life Sciences (Marine Natural Product Chemistry &amp; Bioresources Technology)</a></h3>
+        <div class="role-meta">Jeju National University, South Korea · 2017</div>
+        <p>GPA: 4.26/4.3 (~3.97/4.0) · Thesis: <a href="https://oak.jejunu.ac.kr/handle/2020.oak/22326" target="_blank" rel="noopener">Bioactive Natural Products from Marine Algae and Soft Corals</a></p>
+      </div>
+      <div class="card">
+        <h3 class="role-title">M.Sc. in Applied Organic Chemistry</h3>
+        <div class="role-meta">University of Colombo, Sri Lanka · 2014</div>
+        <p>Thesis: Isolation of Biologically Active Compounds from Algae</p>
+      </div>
+      <div class="card">
+        <h3 class="role-title">B.Sc. in Biological Sciences</h3>
+        <div class="role-meta">University of Colombo, Sri Lanka · 2011</div>
+        <p>Majors: Chemistry, Biochemistry, Zoology · Minor: Radiobiology</p>
+      </div>
+    </section>
+
     <section id="selected-achievements">
-      <h2>Patents</h2>
-      <p>Patents 3: <a href="https://patents.google.com/patent/KR20230151347A/en?oq=KR20230151347A" target="_blank">KR20230151347A</a>, <a href="https://patents.google.com/patent/KR20190123019A/en?oq=KR20190123019A" target="_blank">KR20190123019A</a>, <a href="https://patents.google.com/patent/KR20220087917A/en?oq=KR20220087917A" target="_blank">KR20220087917A</a></p>
+      <h2>Selected Achievements</h2>
+      <ul>
+        <li>Patents 3: <a href="https://patents.google.com/patent/KR20230151347A/en?oq=KR20230151347A" target="_blank" rel="noopener">KR20230151347A</a>, <a href="https://patents.google.com/patent/KR20190123019A/en?oq=KR20190123019A" target="_blank" rel="noopener">KR20190123019A</a>, <a href="https://patents.google.com/patent/KR20220087917A/en?oq=KR20220087917A" target="_blank" rel="noopener">KR20220087917A</a></li>
+        <li>Rising Researcher Award – Korean Society of Fisheries &amp; Aquatic Science (2020)</li>
+        <li>Young Scientist Award – ISNFF (2017)</li>
+        <li>Guest Editor, <em>Marine Drugs</em> – Special Issue on Marine Anti‑Inflammatory Agents</li>
+        <li>Award for Best Contributor (2017–2019), <em>ALGAE</em> Journal</li>
+        <li>BK21 PLUS grant scholarship – National Research Foundation of Korea (2018)</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <p>90+ peer‑reviewed papers · h‑index: 37 · &gt;4,000 citations</p>
+      <p>Full list: <a href="https://scholar.google.com/citations?user=__WZgt4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar Profile</a></p>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p>3‑21 Agriculture/Forestry Centre, University of Alberta, 9011 ‑ 116 St NW, Edmonton AB T6G 2P5<br>
-      Email: <a href="mailto:shanurabru@gmail.com">shanurabru@gmail.com</a></p>
+      <h2>Contact Details</h2>
+      <p>
+        I. P. Shanura Fernando (Ph.D.)<br />
+        3-21 Agriculture/Forestry Centre, University of Alberta, 9011 - 116 St NW, Edmonton AB T6G 2P5<br />
+        Email: <a href="mailto:shanurabru@gmail.com">shanurabru@gmail.com</a> · <a href="mailto:ilekutti@ualberta.ca">ilekutti@ualberta.ca</a><br />
+        <a href="https://www.linkedin.com/in/shanura-fernando-b8872317a/" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="https://scholar.google.com/citations?user=__WZgt4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> ·
+        <a href="https://orcid.org/0000-0002-9450-4239" target="_blank" rel="noopener">ORCID</a> ·
+        <a href="https://www.researchgate.net/profile/Shanura-Fernando" target="_blank" rel="noopener">ResearchGate</a>
+      </p>
     </section>
 
     <footer>© <span id="year"></span> I. P. Shanura Fernando — All Rights Reserved</footer>
